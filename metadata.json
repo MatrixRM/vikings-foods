@@ -1,0 +1,6 @@
+{
+  "name": "Vikings Foods - Cyber Gastronomia",
+  "description": "Plataforma moderna e tecnológica para venda de hambúrgueres artesanais, pastéis crocantes e cachorros-quentes com montador interativo e animações inovadoras.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

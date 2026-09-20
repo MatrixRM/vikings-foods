@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-cyber {
+    font-family: 'Orbitron', monospace;
+  }
+}
+
+/* Custom Cyber Glows & Keyframes */
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.8deg); }
+}
+
+@keyframes cyberPulse {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.04); }
+}
+
+.animate-float {
+  animation: floatGentle 4.5s ease-in-out infinite;
+}
+
+.animate-cyber-pulse {
+  animation: cyberPulse 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090b0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #222936;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Cyber Grid background */
+.cyber-grid-pattern {
+  background-size: 44px 44px;
+  background-image: 
+    linear-gradient(to right, rgba(245, 158, 11, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 158, 11, 0.04) 1px, transparent 1px);
+}
